@@ -2,6 +2,8 @@
 .env
 .env.local
 .env.production
+.env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -24,6 +26,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Virtual environments
 venv/
@@ -31,6 +34,9 @@ env/
 ENV/
 env.bak/
 venv.bak/
+mcp-venv/
+azure-mcp-venv/
+.venv/
 
 # IDE files
 .vscode/
@@ -38,6 +44,8 @@ venv.bak/
 *.swp
 *.swo
 *~
+.project
+.pydevproject
 
 # OS files
 .DS_Store
@@ -47,16 +55,77 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
 logs/
+*.log.*
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
 
 # MCP specific
 *.mcp
 mcp_logs/
+
+# Cursor IDE specific
+.cursor/
+cursor-mcp-config.json
+CURSOR_INTEGRATION.md
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
