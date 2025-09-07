@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "supabase-mcp": {
+      "command": "/Users/kshitijijari/Desktop/MySpace/MCP/supabase-mcp-server/start_mcp_server.sh",
+      "args": []
+    }
+  }
+}
